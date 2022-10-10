@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------ */
+
+
+/* Váriaveis */
+:root{
+    --azulclaro: hsl(215, 51%, 70%);
+    --ciano: hsl(178, 100%, 50%);
+    --azulescurobg: hsl(217, 54%, 11%);
+    --azulescurocard: hsl(216, 50%, 16%);
+    --azulescurolinha: hsl(215, 32%, 27%);
+    --corbranca: hsl(0, 0%, 100%);
+}
+/* Conteúdo */
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--azulescurobg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 22rem;
+    background-color: var(--azulescurocard);
+    padding: 1.3rem;
+    border-radius: 1rem;
+}
+
+.content{
+    border-radius: 1rem;
+    width: 20rem;
+    height: 20rem;
+    background: url(images/image-equilibrium.jpg);
+    background-size: cover;
+    margin-bottom: 1.4rem;
+}
+.content:hover .supciano{
+    background: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    opacity: 55%;
+    border: 10rem solid var(--ciano);
+    background-size: cover;
+    border-radius: 1rem;
+    cursor: grabbing;
+    
+}
+
+.text{
+    font-family: 'Outfit';
+    font-size: 1.125rem;
+    margin-bottom: 1.2rem;
+}
+
+.atext{
+    text-decoration: none;
+    color: var(--corbranca);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.atext:hover{
+    color: var(--ciano);
+    cursor:grabbing;
+}
+.subtext{
+    margin-top: 1.115rem;
+    color: var(--azulclaro);
+    font-weight: 300;
+}
+.ETH{
+    color: var(--ciano);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.ETH img{
+margin-right: 0.4rem;
+}
+
+.text2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 400;
+}
+.days{
+    color: var(--azulclaro);
+}
+.days img{
+    margin-right: 0.4rem;
+}
+hr.line{
+    width: 20rem;
+    opacity: 18%;
+    margin-top: 0.7rem;
+}
+
+.credit{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: 'Outfit';
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    margin-top: 0.4rem;
+    color: var(--azulclaro);
+}
+.credit img{
+    border: 0.015rem solid var(--corbranca);
+    border-radius: 1rem;
+    margin-right: 0.8rem;
+   
+}
+.credit a{
+    text-decoration: none;
+    color: var(--corbranca);
+}
+.credit a:hover{
+    color: var(--ciano);
+    cursor:grabbing;
+}
+/* ------------------ */
